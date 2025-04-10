@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cooperativa - Empréstimos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0fff4;
+      color: #1b4332;
+    }
+    header {
+      background: #2d6a4f;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+    .logo {
+      width: 60px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+    form {
+      max-width: 400px;
+      margin: auto;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #2d6a4f;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #40916c;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+    .whatsapp-float img {
+      width: 60px;
+      height: 60px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo-cooperativa.png" alt="Logo" class="logo"/>
+    <h1>Cooperativa</h1>
+    <p>Empréstimos rápidos, seguros e personalizados</p>
+  </header>
+  <main>
+    <h2>Solicite seu empréstimo</h2>
+    <form action="https://formsubmit.co/atendimento.cooperativa01@gmail.com" method="POST">
+      <input type="text" name="nome" placeholder="Nome completo" required />
+      <input type="email" name="email" placeholder="Seu e-mail" required />
+      <input type="tel" name="telefone" placeholder="Telefone com DDD" required />
+      <input type="number" name="valor" placeholder="Valor desejado (R$)" required />
+      <textarea name="mensagem" placeholder="Mensagem adicional (opcional)"></textarea>
+      <input type="hidden" name="_next" value="https://cooperativa01.github.io/cooperativa-site">
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <a href="https://wa.me/5511959390181" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"/>
+  </a>
+</body>
+</html>
